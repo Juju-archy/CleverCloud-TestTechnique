@@ -2,12 +2,12 @@
 
 $filePath = "./bigF";
 
-// Vérifier si le fichier existe
+// Check if the file exists
 if (file_exists($filePath)) {
-    // Lire le contenu du fichier
+    // Read the file
     $fileContent = file_get_contents($filePath);
 
-    // Vérifier si le fichier n'est pas vide
+    // Check if the file is not empty
     if (!empty($fileContent)) {
         echo 'File loaded!';
     } else {
