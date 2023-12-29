@@ -1,0 +1,18 @@
+{
+  "apps": [
+    {
+      "app_id": "app_1008838a-6ca9-4efb-a268-6db8ce804729",
+      "org_id": "user_a8eaad33-6962-4ab3-b7d1-ce9e1bffb1dd",
+      "deploy_url": "https://push-n3-par-clevercloud-customers.services.clever-cloud.com/app_1008838a-6ca9-4efb-a268-6db8ce804729.git",
+      "name": "CleverCloudTestTechnique",
+      "alias": "CleverCloudTestTechnique"
+    },
+    {
+      "app_id": "app_9d53cd1e-1751-4784-940f-636c2470a789",
+      "org_id": "user_a8eaad33-6962-4ab3-b7d1-ce9e1bffb1dd",
+      "deploy_url": "https://github.com/Juju-archy/CleverCloud-TestTechnique.git",
+      "name": "CleverCloud-TestTechnique",
+      "alias": "CleverCloud-TestTechnique"
+    }
+  ]
+}
