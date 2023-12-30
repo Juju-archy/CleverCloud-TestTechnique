@@ -2,7 +2,7 @@
 
 function bonus(): string
 {
-    $environment = getenv('INSTANCE_TYPE') ?: 'production';
+    $environment = getenv('INSTANCE_TYPE') ?: 'build';
 
     if ($environment === 'build') {
         // Code spécifique à l'environnement de développement
