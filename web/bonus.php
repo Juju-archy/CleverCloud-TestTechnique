@@ -2,7 +2,7 @@
 
 function bonus(): string
 {
-    $environment = getenv('INSTANCE_TYPE') ?: 'production';
+    $environment = getenv('INSTANCE_TYPE');
     echo $environment;
 
     if ($environment === 'build') {
