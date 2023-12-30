@@ -2,7 +2,7 @@
 
 try {
     $db = new PDO(
-        'mysql:host='.getenv("MYSQL_ADDON_HOST").';port=3306;dbname='.getenv("MYSQL_ADDON_DB"),
+        'mysql:host='.getenv("MYSQL_ADDON_HOST").';port='.getenv("MYSQL_ADDON_PORT").';dbname='.getenv("MYSQL_ADDON_DB"),
          getenv("MYSQL_ADDON_USER"), 
          getenv("MYSQL_ADDON_PASSWORD"),
     array(
