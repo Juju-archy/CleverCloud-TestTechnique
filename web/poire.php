@@ -6,4 +6,11 @@ function hello(string $node_version) : void
     else throw new Exception("Wrong version: require node version 14");
 }
 
-hello(getenv("CC_NODE_VERSION"));
+$nodeVersion = getenv("CC_NODE_VERSION");
+
+// Check if CC_NODE_VERSION is set
+if ($nodeVersion !== false) {
+    hello($nodeVersion);
+} else {
+    echo "CC_NODE_VERSION is not set.";
+}
