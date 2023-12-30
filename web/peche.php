@@ -6,7 +6,7 @@ try {
          getenv("MYSQL_ADDON_USER"), 
          getenv("MYSQL_ADDON_PASSWORD"),
     array(
-        PDO::ATTR_TIMEOUT => 50, // in seconds
+        PDO::ATTR_TIMEOUT => 10, // in seconds
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
     ));
     echo "My beautiful DB!";
