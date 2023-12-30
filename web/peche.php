@@ -9,7 +9,7 @@ try {
         PDO::ATTR_TIMEOUT => 10, // in seconds
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
     ));
-    echo "My beautiful DB!";
+    echo "My beautiful DB!\n";
 } catch (PDOException $e) {
     die('Erreur : '.$e->getMessage());
 }
