@@ -2,10 +2,10 @@
 
 function bonus(): string
 {
-    $environment = getenv('INSTANCE_TYPE') ?? 'build';
+    $environment = getenv('APP_ENV') ?? 'dev';
     echo $environment."\n";
 
-    if ($environment === 'build') {
+    if ($environment === 'dev') {
         // Code spécifique à l'environnement de développement
         return "DEV";
     } else {
