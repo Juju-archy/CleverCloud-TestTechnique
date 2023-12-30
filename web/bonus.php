@@ -1,10 +1,16 @@
 <?php
 
-function bonus() : string
+function bonus(): string
 {
-    // TODO
+    $environment = getenv('INSTANCE_TYPE') ?: 'production';
 
-    return "";
+    if ($environment === 'build') {
+        // Code spécifique à l'environnement de développement
+        return "Environnement de Dev";
+    } else {
+        // Code spécifique à l'environnement de production
+        return "Environnement de Prod";
+    }
 }
 
 echo bonus();
